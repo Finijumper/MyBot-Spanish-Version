@@ -50,10 +50,10 @@ EndIf
 Global $sGitHubModOwner = "amintalkin"
 Global $sGitHubModRepo = "MyBot-AIO"
 Global $sGitHubModLatestReleaseTag = "v2.1.3"
-Global $sModSupportUrl = "https://mybot.run/forums/index.php?/topic/19937-new-merged-mybot-6121-all-mods-in-one-v204-05-06-16/"
+Global $sModSupportUrl = "https://mybot.run/forums/index.php?/topic/19006-mybot-532-spanish-version-011-todos-los-mods-en-1-27-05-2016/"
 
 $sBotVersion = "v6.1.4" ;~ Don't add more here, but below. Version can't be longer than vX.y.z because it it also use on Checkversion()
-$sBotTitle = "Merged My Bot " & $sBotVersion & " All In One " & $sGitHubModLatestReleaseTag & " " ;~ Don't use any non file name supported characters like \ / : * ? " < > |
+$sBotTitle = "My Bot " & $sBotVersion & " Spanish Version " & $sGitHubModLatestReleaseTag & " by Fini " ;~ Don't use any non file name supported characters like \ / : * ? " < > |
 
 Global $sBotTitleDefault = $sBotTitle
 
@@ -148,9 +148,9 @@ If $FoundRunningAndroid Then
 	SetLog("Found running " & $Android & " " & $AndroidVersion, $COLOR_GREEN)
 EndIf
 If $FoundInstalledAndroid Then
-	SetLog("Found installed " & $Android & " " & $AndroidVersion, $COLOR_GREEN)
+	SetLog("Encontrado Instalado " & $Android & " " & $AndroidVersion, $COLOR_GREEN)
 EndIf
-SetLog("Android Emulator Configuration: " & $Android & ($AndroidInstance <> "" ? " (instance " & $AndroidInstance & ")" : ""), $COLOR_GREEN)
+SetLog("Configuracion del Emulador de Android: " & $Android & ($AndroidInstance <> "" ? " (instance " & $AndroidInstance & ")" : ""), $COLOR_GREEN)
 
 AdlibRegister("PushBulletRemoteControl", $PBRemoteControlInterval)
 AdlibRegister("PushBulletDeleteOldPushes", $PBDeleteOldPushesInterval)
@@ -223,19 +223,19 @@ EndIf
 		$Restart = False
 		$fullArmy = False
 		$CommandStop = -1
-			
-			; each loop ( after each attack ) will determinate if close while train or not 
-			If $RandomCloseTraining = 1 then 
+
+			; each loop ( after each attack ) will determinate if close while train or not
+			If $RandomCloseTraining = 1 then
 				if $debugSetlog = 1 then Setlog("You chose the Random Close Or Leave train...", $COLOR_RED)
 				$RandomCloseTraining2 = Random(0,1,1)
-				If $RandomCloseTraining2 = 1 then $LeaveOrClose +=1 
-				If $LeaveOrClose = 3 then 
+				If $RandomCloseTraining2 = 1 then $LeaveOrClose +=1
+				If $LeaveOrClose = 3 then
 					$RandomCloseTraining2 = 0
-					$LeaveOrClose = 0 
-				EndIf 
+					$LeaveOrClose = 0
+				EndIf
 				if $debugSetlog = 1 then Setlog("$RandomCloseTraining2: " & $RandomCloseTraining2)
 			EndIf
-			
+
 		If _Sleep($iDelayRunBot1) Then Return
 		checkMainScreen()
 		If $Restart = True Then ContinueLoop
@@ -493,7 +493,7 @@ EndIf
 					ElseIf IniRead($sProfilePath & "\[04] Fourth\config.ini", "Multy", "MultyFarming", "0") = "1" Then
 						SwitchAccount("Fourth")
 					Else
-					
+
 						SetLog("You don't have other profiles configured for multy-farming. Swithing accounts canceled.", $COLOR_RED)
 					EndIf
 
