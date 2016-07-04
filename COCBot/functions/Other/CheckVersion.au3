@@ -29,7 +29,7 @@ Func CheckVersion()
 			SetLog("OFFICIAL VERSION: " & $lastversion, $COLOR_GREEN)
 			SetLog(" ")
 		Else
-			SetLog("WELCOME CHIEF, YOU HAVE THE LATEST VERSION OF THE BOT", $COLOR_GREEN)
+			SetLog("BIENVENIDO, TIENES LA ULTIMA VERSION DEL MOD", $COLOR_GREEN)
 			SetLog(" ")
 			_PrintLogVersion($lastmessage)
 		EndIf

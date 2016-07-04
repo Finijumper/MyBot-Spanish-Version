@@ -41,16 +41,16 @@ $hToolTip = _GUIToolTip_Create($frmBot) ; tool tips for URL links etc
 ;~ Header Menu
 ;~ ------------------------------------------------------
 SplashStep("Loading Header...")
-$idMENU_DONATE = GUICtrlCreateMenu("&" & GetTranslated(601,18,"Paypal Donate?"))
-$idMENU_DONATE_SUPPORT = GUICtrlCreateMenuItem(GetTranslated(601,19,"Support the development"), $idMENU_DONATE)
-$AboutMenu = GUICtrlCreateMenu("Help")
-$CheckVersionConfig = GUICtrlCreateMenuItem("Check Version", $AboutMenu)
-$DownloadLatestConfig = GUICtrlCreateMenuItem("Download Latest", $AboutMenu)
-$ModSupportConfig = GUICtrlCreateMenuItem("Mod Support", $AboutMenu)
+$idMENU_DONATE = GUICtrlCreateMenu("&" & GetTranslated(601,18,"Donacion PayPal?"))
+$idMENU_DONATE_SUPPORT = GUICtrlCreateMenuItem(GetTranslated(601,19,"Ayuda al Desarrollo"), $idMENU_DONATE)
+$AboutMenu = GUICtrlCreateMenu("Ayuda")
+$CheckVersionConfig = GUICtrlCreateMenuItem("Comprobar Version", $AboutMenu)
+$DownloadLatestConfig = GUICtrlCreateMenuItem("Descargar Ultima", $AboutMenu)
+$ModSupportConfig = GUICtrlCreateMenuItem("Soporte del Mod", $AboutMenu)
 GUICtrlSetOnEvent(-1, "")
-;$idMENU_OPTIONS = GUICtrlCreateMenu("&Options")
+;$idMENU_OPTIONS = GUICtrlCreateMenu("&Opciones")
 ;GUICtrlSetOnEvent(-1, "")
-;$idMENU_ABOUT = GUICtrlCreateMenu("&About Us")
+;$idMENU_ABOUT = GUICtrlCreateMenu("&Acerca de")
 ;GUICtrlSetOnEvent(-1, "")
 
 ;~ ------------------------------------------------------

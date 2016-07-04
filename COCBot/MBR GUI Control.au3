@@ -194,9 +194,9 @@ Func GUIControl($hWind, $iMsg, $wParam, $lParam)
 				Case $btnAttackNowTS
 					btnAttackNowTS()
 				Case $idMENU_DONATE_SUPPORT
-					ShellExecute("https://mybot.run/forums/index.php?/donate/make-donation/")
+					ShellExecute("https://www.paypal.me/Finijumper")
 				Case $CheckVersionConfig
-					If CheckMODVersion() Then MsgBox(0, "", "You Are Using The Latest Version Of Mod All In One")
+					If CheckMODVersion() Then MsgBox(0, "", "Estas Usando La Ultima Version del Mod")
 				Case $DownloadLatestConfig
 					ShellExecute("https://github.com/" & $sGitHubModOwner & "/" & $sGitHubModRepo & "/archive/master.zip")
 				Case $ModSupportConfig
